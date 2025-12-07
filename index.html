@@ -235,11 +235,11 @@ const clickDiv = document.getElementById("myVote");
 clickDiv.addEventListener("click", () => {
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   const oscillator = audioCtx.createOscillator();
-  oscillator.type = "sine";
-  oscillator.frequency.setValueAtTime(600, audioCtx.currentTime); // beep freq
+  oscillator.type = "squre";
+  oscillator.frequency.setValueAtTime(800, audioCtx.currentTime); 
   oscillator.connect(audioCtx.destination);
   oscillator.start();
-  oscillator.stop(audioCtx.currentTime + 0.1); // 0.1 sec beep
+  oscillator.stop(audioCtx.currentTime + .5); 
 });
 </script>
   </html>
