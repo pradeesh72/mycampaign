@@ -40,9 +40,9 @@
       /* left: symbol + name */
       .bu-left{display:flex; align-items:center; gap:12px; width:78%;}
       .symbol{width:58px; height:48px; background:var(--paper); border:2px solid #bfbfbf; display:flex; align-items:center; justify-content:center; border-radius:6px; font-weight:800; font-size:22px; box-shadow:0 2px 0 rgba(0,0,0,0.04);}
-      .candidate-meta{display:flex; flex-direction:column; justify-content:center;}
-      .cand-name{font-weight:700; font-size:14px;}
-      .cand-no{font-weight:800; color:#333; font-size:13px}
+      .candidate-meta{display:flex; justify-content:center;}
+      .cand-name{font-weight:700; font-size:14px;display: inline}
+      .cand-no{font-weight:800; color:#333; font-size:13px;display: inline;}
 
       /* right: long oval button with left arrow */
       .bu-right{width:22%; display:flex; justify-content:center;}
@@ -127,82 +127,82 @@
           
           <!-- Generate 16 rows explicitly -->
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no">1.</div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no">2.</div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"><img src="Hand_INC.svg.png" width="50"/></div><div class="candidate-meta"><div class="cand-name">ബിച്ചു ചിറയ്ക്കൽ</div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"><img src="Hand_INC.svg.png" width="50"/></div><div class="candidate-meta"><span class="cand-no">3.</span><span class="cand-name">ബിച്ചു ചിറയ്ക്കൽ</span></div></div>
             <div class="bu-right"><div class="arrow-left"><div class="vote-pill" id="myVote" tabindex="0" data-bs-toggle="modal" data-bs-target="#myModal"><div class="inner"></div></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no">4.</div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no">5.</div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no">6.</div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
           <div class="bu-row">
-            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-name"></div><div class="cand-no"></div></div></div>
+            <div class="bu-left"><div class="symbol"></div><div class="candidate-meta"><div class="cand-no"></div><div class="cand-name"></div></div></div>
             <div class="bu-right"><div class="arrow-left"></div><div class="vote-pill" tabindex="0"><div class="inner"></div></div></div>
           </div>
 
