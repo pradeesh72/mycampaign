@@ -92,7 +92,7 @@
       .bu-paper .bu-row:nth-child(even){background:linear-gradient(#fbfbfb,#f7f7f7)}
 
       /* responsive */
-      @media (max-width:420px){ .ballot-unit{width:320px} .symbol{width:48px;height:40px;font-size:18px} }
+      @media (max-width:420px){ .ballot-unit{width:96%} .symbol{width:48px;height:40px;font-size:18px} body{padding: 0%;}}
 
       /* accessibility focus */
       .vote-pill:focus{outline:3px solid rgba(0,120,200,0.18)}
