@@ -72,10 +72,10 @@
   border-right: 12px solid rgba(0,0,0,0.12);
 }
 
-.arrow-left:active:before {
+.arrow-left.active:before {
     background-color: #04600d;
 }
-.arrow-left:active::after {
+.arrow-left.active::after {
     border-right-color: #04600d;
 }
 

@@ -1,7 +1,9 @@
 const clickDiv = document.getElementById("myVote");
+const parentDiv = clickDiv.closest(".arrow-left");
 const modal = new bootstrap.Modal(document.getElementById("myModal"));
 const buttonClick = (e) => {
     e.preventDefault();
+    parentDiv.classList.add('active');
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   const oscillator = audioCtx.createOscillator();
   oscillator.type = "squre";
@@ -10,6 +12,7 @@ const buttonClick = (e) => {
   oscillator.start();
   oscillator.stop(audioCtx.currentTime + 1); 
   setTimeout(() => {
+    parentDiv.classList.remove('active');
     modal.show();
   }, 1000); 
 }
